@@ -1,0 +1,20 @@
+*{
+    margin:0; padding:0;
+}
+.boxmodel{
+    width:400px;
+    height: 200px;
+    background-color:red;
+}
+input{
+    /* padding-left:20px;
+    padding-top:20px; */
+    /* short form padding ki*/
+    /* padding:20px 20px 20px;  */
+    /* very short form padding ki*/
+    padding:20px;
+    /* margin-top:50px;
+    margin-left:20px; */
+    /* padding ki very short form */
+    margin:10px;
+}

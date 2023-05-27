@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+}
+#textcss{
+    font-family: 'Oswald', sans-serif;
+    color:red;
+    letter-spacing:2px;
+    word-spacing:5px;
+    /* direction:ltr;
+    text-indent:50px; */
+    text-align:center;
+    text-transform:uppercase;
+    
+}
