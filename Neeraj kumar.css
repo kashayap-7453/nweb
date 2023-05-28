@@ -107,7 +107,7 @@ main .paragraph ul li{
 
 .tablerequired .typejob{
     border-collapse: collapse;
-    width: 200px;
+    width:60%;
     height:200px;
     border:5px solid #ccc; 
     border-top-left-radius: 30px;   
@@ -193,6 +193,7 @@ main .paragraph ul li{
     align-items:center;
     background-color:rgba(243, 243, 243);
     border-radius:20px;
+    /* box-shadow:10px 10px rgba(242, 242, 242); */
 }
 
 .form-conatainer .form-conainer-material .image-section{
@@ -264,6 +265,7 @@ main .paragraph ul li{
     background-color:rgba(20, 122, 101);
     font-size:14px;
     font-weight:600;
+    cursor:pointer;
 
 }
      
