@@ -13,3 +13,18 @@
     text-transform:uppercase;
     
 }
+#welcome-font{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style:italic;
+    font-weight:900;
+    font-size:50px;
+    color:blue;
+    letter-spacing:2px;
+    word-spacing:5px;
+    /* direction:ltr;
+    text-indent:50px; */
+    text-align:center;
+    text-transform:uppercase;
+    padding:50px;
+    
+}
