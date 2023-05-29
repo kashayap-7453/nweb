@@ -1380,7 +1380,7 @@
 
 // ###########  Time Methods  ##############
 
-const curTime = new Date();
+// const curTime = new Date();
 
 // How to get the individual time #
 
@@ -1479,3 +1479,11 @@ const curTime = new Date();
 // mein yadi 10 se multiply kar rahe hai to 0 - 9 ki value hi aaygi 
 
 // console.log(Math.floor(Math.random()*10));
+
+
+// Rule (10)
+// Math.trunc():-
+// is method se desible ke baad ki value ko jyo ka tyo rakhta hai
+
+// console.log(Math.trunc(4.7));
+// console.log(Math.trunc(-99));
