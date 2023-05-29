@@ -802,10 +802,11 @@
 
 // Push metod###################
 
-const animals = ['pigs' , 'gaots' , 'sheeps'];
+// const animals = ['pigs' , 'gaots' , 'sheeps'];
 
-animals.push('chicken');
-console.log(animals);
+// animals.push('chicken');
+// console.log(animals);
+
 
 // Note :- interview mein poocha jata ki 'push method ' kya return karata hai
 // push metod hamein length provide karata hai 
@@ -865,6 +866,7 @@ console.log(animals);
 // console.log(plants);
 
 
+
 // (1) shift() method ################@############
 // shift pop metod ka ulta hota hai ye first vlue ko reomove karta hai
 
@@ -889,13 +891,13 @@ console.log(animals);
 // Note :- splice(jo number add karna hai uska index number, jo value delete kani uska index number,"value (jo add karni hai)")
 
 
-// const months = ['jan' , 'feb' , 'march' , 'april' , 'may' , 'june'];
+// const months = ['january' , 'feb' , 'march' , 'april' , 'may' , 'june'];
 
 
 // Solution (1)
 // 1st
     //  type mein index number add karna hai index value usi ki add hogi jo number add karna hai 
-// const newmonth = months.splice(5,0,"dec");
+// const newmonth = months.splice(6,0,"dec");
 // console.log(months);
 
 // 2st
@@ -945,8 +947,10 @@ console.log(animals);
 
 
 
-// typeof(2nd)
-// value ko search kar delete karna
+
+
+// // typeof(2nd)
+// // value ko search kar delete karna
 // const months = ['jan' , 'february' , 'march' , 'june' , 'may' , 'dec'];
 
 // const indexOfMonth = months.indexOf('june');
@@ -959,7 +963,7 @@ console.log(animals);
 //     console.log('no search data found');
 // }
 
-
+ 
 
 // typeof(3d)
 // value ko search kar uske baad ki sabhi value remove karna
@@ -979,7 +983,7 @@ console.log(animals);
 
 
 
-// (5) Map and reduce method
+// (5) Map() and reduce() method
 
 // 1st map() method ka prayog kisi value se kam value ko remove karna
 // const array1 = [1,2,4,6,9,12,15];
@@ -1015,17 +1019,14 @@ console.log(animals);
 
 
 
-
-
-
 // ###################### Challange time #######################
 //  Solution (1) 
 //  squre root nikalna
 
 // let arr = [25,36,49,64,81];
 
-// let arrSqr = arr.map((curElem) => {
-//     return Math.sqrt(curElem);
+// let arrSqr = arr.map((curElm) => {
+//     return Math.sqrt(curElm);
 // })
 
 // console.log(arrSqr);
@@ -1067,7 +1068,8 @@ console.log(animals);
 
 // console.log(sum);
 
-
+// let arr = [5,6,8];
+// let sum = arr.reduce((accumulator,curElm,index,arr) )
 
 
 // 2nd rule reduce method se multiply karna  
@@ -1208,4 +1210,272 @@ console.log(animals);
 // let myAcctualTweet = myTweets.slice(0,20);
 // console.log(myAcctualTweet);
 // console.log(myAcctualTweet.length);
-// console.log(typeof(myAcctualTweet));
+
+
+
+
+// substring() method (1)**********************************
+// substring () is simila slice
+// substring negative index not accept
+
+// var str = "apple ,banana,diwi";
+// let res = str.substring(0,4);
+// console.log(res);
+
+
+// Substring() method (2)
+// isme jab negative value ko add kare hai tab vo index number start se leta hai
+
+// var str = "apple ,banana,diwi";
+// let res = str.substring(7,-2);
+// console.log(res);
+
+
+// substr() method ka prayog *********************************
+// last se value lene ke liye karte hai
+
+// var str = "apple ,banana,kiwi";
+// let res = str.substr(0,4);
+// // let res = str.substr(-4);
+// console.log(res);
+
+
+// Replace string content()*************************
+// Note - repace method keval 1st value ko hi replace karega
+
+// var bioData = `I am vindo bahadu thap vinod`;
+
+// let replaceData = bioData.replace('vindo','Vinod');
+// console.log(replaceData);
+
+
+
+
+
+
+// Extracting string character***************************
+
+// 3 method of Extracting string character
+
+// (1)charAt(position)
+// (2)charCodeAt(position)
+// (3)property access[]
+
+// (1) charAt()
+// let str = "HELLOW WORLD";
+// // console.log(str.charAt(0));
+// console.log(str.charAt(9));
+
+
+// (2)charCodeAt
+
+// var str = "HELLOW WORLD";
+// console.log(str.charCodeAt(0));
+
+
+// ########################## challange time##################################
+
+// Return the unicode of the last character in a string
+
+// let str = "HELLO WORLD";
+// let lastChar = str.length-1;
+// console.log(str.charCodeAt(lastChar));
+
+
+// property access*****************
+// property access of string
+
+// var str = "HELLO WORLD";
+// console.log(str[0]);
+
+
+
+// // Other use ful methods
+// let myName = "vinod thapa";
+// console.log(myName.toUpperCase());
+// console.log(myName.toLowerCase());
+
+
+
+// concat()method########################
+// concat method mein space dene ke liye double port aur uske baad space dena hai 
+
+// let fName = "Neeraj";
+// let lName = "kumar";
+
+// console.log(fname.concat(lName));
+// console.log(fname.concat("" ,lname));
+
+
+// trim() method dono aur se white space hatata hai
+
+// var str = "    HELLO WORLD       "
+// console.log(str.trim());
+
+
+
+// string ko array mein change karna##########################
+// Rule :- split metod se
+// var txt = "a,b,c,d,e";
+
+// console.log(txt.split(","));
+// console.log(txt.split(" "));
+// console.log(txt.split("|"));
+
+
+// ****************** Date *****************
+
+// let currDate = new Date();
+// console.log(currDate);
+
+
+// console.log(new Date());
+// console.log(new Date().toLocaleString());
+// console.log(new Date().toString());
+
+
+
+// Date.now() method millisecond provide karta 
+// (1 january 1970) se ab tak ki
+
+// console.log(Date.now());
+
+
+// new Date(year,month...  )
+// 7 Number specify, year, month, day, hour ,minute ,second and millisecond(in that order)
+
+// var d = new Date(2023,5,24,10,33,30,0);
+// console.log(d.toLocaleString())
+
+
+// ########  How to get indivisual date #############
+
+// const currDate = new Date();
+
+// console.log(currDate.toLocaleString());
+// console.log(currDate.getFullYear());
+// console.log(currDate.getMonth());
+// console.log(currDate.getDate());
+// console.log(currDate.getDay());
+
+
+
+
+// ************* Set Full year method **************
+
+// ###########  Dates Methods  ##############
+
+// const curDate = new Date();
+
+// console.log(curDate.setFullYear(2022));
+// console.log(curDate.setFullYear(2022 ,10 ,5));
+// console.log(curDate.setMonth(10));
+// console.log(curDate.setDate(5));
+// console.log(curDate.toLocaleString());
+
+
+
+
+// ************* (Time methods) **************
+
+// ###########  Time Methods  ##############
+
+const curTime = new Date();
+
+// How to get the individual time #
+
+// console.log(curTime.getTime());
+// // the getTime() methods return the number of milliseconds
+// console.log(curTime.getTime());
+// console.log(curTime.getHours());
+// console.log(curTime.getMinutes());
+// console.log(curTime.getSeconds());
+// console.log(curTime.getMilliseconds());
+
+
+// ****************** Practice time **********
+
+// new Date().toLocaleTimeString();
+// // -
+// new Date().toLocaleDateString();
+// // -
+// new Date().toLocaleString();
+
+
+
+
+// **************************** Math object in javascript ************************
+// Math objects in javascript mein "M" capital rahega
+
+ 
+// Rule (1)
+// console.log(Math.PI);
+
+// Rule (2)
+// round() method----
+// let num = 10.50;
+// console.log(Math.round(num));
+
+
+// Rule (3)
+// Math.pow() method-----
+// console.log(Math.pow(2,3));
+// console.log(2**3);
+
+
+// Rule (4)
+// Math.squrt()Methods------
+// console.log(Math.sqrt(25));
+// console.log(Math.sqrt(36));
+// console.log(Math.sqrt(81));
+// console.log(Math.sqrt(33));
+// console.log(Math.sqrt(45));
+
+
+// Rule (5)
+// Math.abs() method Negative value ko positive value mein convert karta hai
+// console.log(Math.abs(-55));
+// console.log(Math.abs(-65));
+// console.log(Math.abs(-55.99));
+// console.log(Math.abs(4-10));
+
+
+// Rule (6)
+// Math.ceil()
+// Math.ceil():-ke prayos yadi point se baad ki value 5 se ka hai to +1 hoga
+
+
+// console.log(Math.ceil(4.1));
+// console.log(Math.round(4.1));
+
+// console.log(Math.ceil(99.01));
+// console.log(Math.round(99.01));
+
+// console.log(Math.ceil(12.45));
+
+
+// Rule (7)
+// Math.floor():-
+// is method mein point ke baad kaisi bhi sankhya ho usse koi fark nahi padta
+
+// console.log(Math.floor(4.7));
+// console.log(Math.floor(99.7));
+// console.log(Math.floor(10.10));
+// console.log(Math.floor(100.5));
+
+
+// Rule (8)
+// Math.min() sabse chhoti value nikalta hai
+// console.log(Math.min(0,150,90,-30,1999,-100));
+
+
+// Rule (8)
+// Math.max() sabse badi value nikalta hai
+// console.log(Math.max(0,150,90,-30,1999,-100));
+
+
+// Rule (9)
+// Math.random():- 
+// mein yadi 10 se multiply kar rahe hai to 0 - 9 ki value hi aaygi 
+
+// console.log(Math.floor(Math.random()*10));
