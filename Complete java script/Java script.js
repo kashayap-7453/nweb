@@ -1215,12 +1215,12 @@
 
 
 // substring() method (1)**********************************
-// substring () is simila slice
+// substring () is similar slice
 // substring negative index not accept
 
-// var str = "apple ,banana,diwi";
-// let res = str.substring(0,4);
-// console.log(res);
+var str = "apple ,banana,diwi";
+let res = str.substring(0,4);
+console.log(res);
 
 
 // Substring() method (2)
