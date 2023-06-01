@@ -23,8 +23,6 @@
 
 
 
-
-
 // typeof operator######
 //         // typeof operator ka prayog model type dekhne ke liye kartein hai
 //         // () isko parenthesis bolte hai 
@@ -52,6 +50,7 @@
 // is formule ka use power nikalne ke liye hota hai
 // console.log(3**3);
 
+
 // solution 2
 // + mein theek dikhayega lekin - mein NaN dikhayega 
 // console.log( 5 + " Neeraj");
@@ -59,13 +58,13 @@
 
 // // solution 3
  
-// // var a = 5;
-// // var b = 10;
+// var a = 5;
+// var b = 10;
 
-// // question:- output b=5 and a=10 
-// // var c = b;  c = 10
-// // b = a;     b = 5
-// // a = c;
+// // // question:- output b=5 and a=10 
+// var c = b;  c = 10
+// b = a;     b = 5
+// a = c;
 
 // // console.log("The value of a is " + a);
 // // console.log("The value of b is " + b);
@@ -105,6 +104,7 @@
 
 
 
+
 // // *****************Interview question 2*********************
 //         //     what is NaN?
 
@@ -116,7 +116,6 @@
 
 // // console.log(isNaN(myPhoneNumber));
 // // console.log(isNaN(myName));
-
 
 
 
@@ -169,6 +168,7 @@
 // console.log(newNum);
 
 
+
 // // prefix operator(++num)
 // var num = 15;
 // var newNum = ++num;
@@ -177,8 +177,7 @@
 // console.log(newNum);
 
 
-
-// // conmperasion operator 
+// // comperasion operator ********************************
 
 // var a = 30;
 // var b = 20;
@@ -197,6 +196,7 @@
 
 
 
+
 // // Logical operators********************
 //    // Logicaly operators are typically used with boolean 
 //    // When they are , they return boolean value
@@ -207,6 +207,8 @@
 // // logical and (&&)
 //    // if ek bhi operato galat hai to answer false aayega 
 // //    console.log( a > b && b > -30 && a > 25);
+
+
 
 // // Logical OR (||)
 //   // ye sign Enter button ke upar waale button se aayga 
@@ -228,7 +230,7 @@
 
 // console.log("Hellow world");
 
-// // hellow ke baad mein space dene ke baad mein display par bhi space aayegaa
+// // hellow ke baad space dene ke baad  display par bhi space aayegaa hello world ke beech
 // console.log("Hello " + "world");
 
 // var myName = "Avul";
@@ -239,7 +241,6 @@
 // console.log(myName + "Kalam");
 
 // console.log(myName + " pakir Jainulabdeen Abdul Kalam");
-
 
 
 
@@ -256,6 +257,7 @@
 // }else{
 //         console.log("no need to take a rain coat");
 // }
+
 
 
 
@@ -297,6 +299,7 @@
 
 
 
+
 // // Truthy and falsy values in Javascript*******************
 // // We have total 5 falsy value in javascript 
 // // 0 , "" , undefined , null , NaN , false 
@@ -327,23 +330,26 @@
 
 // // isi ko ternary operator se 
 
-// // var age = 17;
-// // console.log((age >= 18) ? "you can vote" : "you can't vote");
+// var age = 18;
+// console.log((age >= 18) ? "you can vote" : "you can't vote");
+
 
 
 // // switch statement************************
-// var area = "square";
+// var area = "circle";
 // var PI = 3.142, l=5 , b=4 ,r=3;
 
 // if(area == "circle"){
-//         console.log("the are of the circle is : " + PI*r**2);
+//         console.log("the area of the circle is : " + PI*r**2);
 // }else if(area == "triangle"){
-//         console.log("the are of the triange is : " + (l*b)/2);
+//         console.log("the area of the triange is : " + (l*b)/2);
 // }else if(area == "rectangle"){
-//         console.log("the are of the rectangle is : " + (l*b));
+//         console.log("the area of the rectangle is : " + (l*b));
 // }else{
 //         console.log("please enter valid data");
 // }
+
+
 
 
 // // switch statemet  if else lese if else if ka short method hai
@@ -1218,9 +1224,9 @@
 // substring () is similar slice
 // substring negative index not accept
 
-var str = "apple ,banana,diwi";
-let res = str.substring(0,4);
-console.log(res);
+// var str = "apple ,banana,diwi";
+// let res = str.substring(0,4);
+// console.log(res);
 
 
 // Substring() method (2)
@@ -1245,7 +1251,7 @@ console.log(res);
 
 // var bioData = `I am vindo bahadu thap vinod`;
 
-// let replaceData = bioData.replace('vindo','Vinod');
+// let replaceData = bioData.replace('neeraj,'Vinod');
 // console.log(replaceData);
 
 
@@ -1261,7 +1267,7 @@ console.log(res);
 // (2)charCodeAt(position)
 // (3)property access[]
 
-// (1) charAt()
+// // (1) charAt()
 // let str = "HELLOW WORLD";
 // // console.log(str.charAt(0));
 // console.log(str.charAt(9));
